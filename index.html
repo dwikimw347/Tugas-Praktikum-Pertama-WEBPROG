@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Dwiki</title>
+
+  <!-- External CSS (sesuai modul) -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="nav">
+    <a class="logo" href="#home">Dwiki</a>
+    <div class="menu">
+      <a href="#about">Tentang</a>
+      <a href="#skills">Skill</a>
+      <a href="#projects">Projek</a>
+      <a href="#contact">Kontak</a>
+    </div>
+  </nav>
+
+  <!-- 1) HEADER -->
+  <header id="home" class="hero">
+    <div class="hero-left">
+      <p class="pill">✨ Portofolio Pribadi</p>
+      <h1>Halo, aku <span class="name">Dwiki</span>.</h1>
+      <p class="lead">
+        Aku sedang belajar web development. Suka bikin tampilan yang clean,
+        lembut, dan enak dilihat—plus interaksi kecil yang bikin hidup.
+      </p>
+
+      <div class="row">
+        <button id="btnMessage" class="btn primary" type="button">Sapa Aku</button>
+        <button id="btnMood" class="btn soft" type="button">Ganti Mood</button>
+      </div>
+
+      <p id="moodText" class="hint">Mood saat ini: <strong>Calm</strong></p>
+    </div>
+
+    <div class="hero-right">
+      <div class="card profile">
+        <div class="avatar-wrap">
+          <!-- opsional: ganti file foto di assets -->
+          <img class="avatar" src="assets/image.jpg" alt="Foto profil (opsional)" />
+        </div>
+        <div class="profile-info">
+          <p class="mini-title">Identitas</p>
+          <p class="mini"><strong>Nama:</strong> Dwiki</p>
+          <p class="mini"><strong>Fokus:</strong> HTML • CSS • JavaScript</p>
+          <p class="mini"><strong>Domisili:</strong> Indonesia</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2) ABOUT -->
+  <section id="about" class="section">
+    <div class="section-head">
+      <h2>Tentang Aku</h2>
+      <p class="sub">
+        Singkatnya: aku suka belajar lewat praktik. Bikin halaman, rapihin layout,
+        lalu kasih interaksi sederhana biar nggak “flat”.
+      </p>
+    </div>
+
+    <div class="grid two">
+      <div class="card">
+        <h3>Yang aku pegang</h3>
+        <p>Rapi, gampang dibaca, dan responsif seperlunya.</p>
+      </div>
+      <div class="card">
+        <h3>Yang lagi aku latih</h3>
+        <p>Struktur section, styling yang konsisten, dan DOM JavaScript dasar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3) SKILLS -->
+  <section id="skills" class="section alt">
+    <div class="section-head">
+      <h2>Skill</h2>
+      <p class="sub">Tiga fondasi yang sedang aku kuatkan:</p>
+    </div>
+
+    <div class="grid three">
+      <div class="card">
+        <h3>HTML</h3>
+        <p>Struktur halaman, semantic section, dan elemen form.</p>
+        <div class="meter">
+          <span class="bar" style="width: 78%"></span>
+        </div>
+        <p class="meter-label">Level: nyaman</p>
+      </div>
+
+      <div class="card">
+        <h3>CSS</h3>
+        <p>Layout, spacing, tipografi, dan warna yang lembut.</p>
+        <div class="meter">
+          <span class="bar" style="width: 70%"></span>
+        </div>
+        <p class="meter-label">Level: berkembang</p>
+      </div>
+
+      <div class="card">
+        <h3>JavaScript</h3>
+        <p>Event, alert, dan manipulasi DOM sederhana.</p>
+        <div class="meter">
+          <span class="bar" style="width: 60%"></span>
+        </div>
+        <p class="meter-label">Level: latihan rutin</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4) PROJECTS (projek ini saja) -->
+  <section id="projects" class="section">
+    <div class="section-head">
+      <h2>Projek</h2>
+      <p class="sub">
+        Saat ini projek utamaku adalah portofolio ini (HTML, CSS, JavaScript).
+        Fokusnya: layout rapi, warna lembut, dan interaksi kecil.
+      </p>
+    </div>
+
+    <div class="grid two">
+      <article class="card project">
+        <h3>Portofolio Pribadi</h3>
+        <p>
+          Berisi 5 section utama: Header, About, Skills, Projects, dan Contact.
+          Ada tombol interaksi dan form sederhana.
+        </p>
+        <div class="chips">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+        </div>
+      </article>
+
+      <article class="card project">
+        <h3>Catatan kecil</h3>
+        <p>
+          Aku sengaja pakai interaksi yang sederhana supaya mudah dipahami dan
+          gampang dikembangkan nantinya.
+        </p>
+        <div class="chips">
+          <span class="chip">DOM</span>
+          <span class="chip">Event</span>
+          <span class="chip">Form</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 5) CONTACT -->
+  <section id="contact" class="section alt">
+    <div class="section-head">
+      <h2>Kontak</h2>
+      <p class="sub">Kalau mau ngobrol atau kerja bareng, kirim pesan di bawah.</p>
+    </div>
+
+    <form id="contactForm" class="card form">
+      <div class="field">
+        <label for="nameInput">Nama</label>
+        <input id="nameInput" type="text" placeholder="Tulis nama kamu" required />
+      </div>
+
+      <div class="field">
+        <label for="emailInput">Email</label>
+        <input id="emailInput" type="email" placeholder="email@contoh.com" required />
+      </div>
+
+      <div class="field">
+        <label for="msgInput">Pesan</label>
+        <textarea id="msgInput" rows="4" placeholder="Tulis pesan singkat..." required></textarea>
+      </div>
+
+      <button class="btn primary" type="submit">Kirim Pesan</button>
+      <p id="formStatus" class="status"></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Dwiki • versi lembut & simpel.</p>
+  </footer>
+
+  <!-- External JS (sesuai modul) -->
+  <script src="js/script.js"></script>
+</body>
+</html>
